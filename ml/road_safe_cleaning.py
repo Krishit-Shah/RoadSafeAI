@@ -1,5 +1,7 @@
 # Step-by-step data cleaning and merging for RoadSafeAI
-
+# /ml/road_safe_cleaning.py
+# This script cleans and merges accident, casualty, and vehicle datasets for RoadSafeAI.
+# It aggregates casualties and vehicles, creates new features, and saves the cleaned dataset.   
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns

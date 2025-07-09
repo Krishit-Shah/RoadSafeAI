@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Admin Dashboard – RoadSafeAI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Admin Dashboard – RoadSafeAI</h1>
+      <nav>
+        <a href="#summary">Summary</a> <a href="#charts">Charts</a>
+        <a href="#reports">Reports</a>
+      </nav>
+    </header>
+    <section id="summary" class="card-grid">
+      <div class="card">Total Accidents: 1200</div>
+      <div class="card">Average Severity: 4.2</div>
+      <div class="card">Hotspots Detected: 6</div>
+    </section>
+    <section id="charts">
+      <label for="regionFilter">Filter by Region:</label>
+      <select id="regionFilter">
+        <option value="all">All</option>
+        <option value="surat">Surat</option>
+        <option value="ahmedabad">Ahmedabad</option>
+        <option value="vadodara">Vadodara</option>
+      </select>
+      <h2>Accident Analysis</h2>
+<img src="charts/heatmap.png" alt="Accident Heatmap (Location-wise)" />
+<img src="charts/hourly_bar.png" alt="Accidents by Hour (Bar Chart)" />
+<img src="charts/severity_boxplot.png" alt="Severity Score Distribution (Boxplot)" />
+
+    </section>
+    <section id="reports">
+      <h2>Recent Accident Reports</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Location</th>
+            <th>Date</th>
+            <th>Fatalities</th>
+            <th>Severity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Surat</td>
+            <td>2025-06-21</td>
+            <td>2</td>
+            <td>5.0</td>
+          </tr>
+          <tr>
+            <td>Ahmedabad</td>
+            <td>2025-06-22</td>
+            <td>0</td>
+            <td>1.0</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <script src="script.js"></script>
+    <footer>
+      <p id="timestamp" style="text-align: center">Page generated at: --</p>
+    </footer>
+  </body>
+</html>
