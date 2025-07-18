@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Report an Accident</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🚨 Accident Report Form</h1>
+    <form id="accidentForm">
+      <label>📍 Location:
+        <input type="text" name="location" required>
+      </label>
+
+      <label>📅 Date:
+        <input type="date" name="date" required>
+      </label>
+
+      <label>🕒 Time:
+        <input type="time" name="time" required>
+      </label>
+
+      <label>👥 Casualties / Number of Injured or Dead: 
+        <input type="number" name="casualties" min="0">
+      </label>
+
+      <label>🚗 Vehicles Involved:
+        <input type="number" name="vehicles" min="0">
+      </label>
+
+      <label>🌦️ Weather:
+        <select name="weather" required>
+          <option value="">-- Select Weather --</option>
+          <option>Sunny</option>
+          <option>Rainy</option>
+          <option>Foggy</option>
+          <option>Unknown</option>
+        </select>
+      </label>
+
+      <fieldset>
+        <legend>🚘 Vehicle Types Involved: </legend>
+        <label><input type="checkbox" name="vehicle_type" value="Bike"> Bike</label>
+        <label><input type="checkbox" name="vehicle_type" value="Car"> Car</label>
+        <label><input type="checkbox" name="vehicle_type" value="Bus"> Bus</label>
+        <label><input type="checkbox" name="vehicle_type" value="Truck"> Truck</label>
+        <label><input type="checkbox" name="vehicle_type" value="Other"> Other</label>
+      </fieldset>
+
+      <label>📝 Description:
+        <textarea name="description" rows="4" cols="40" placeholder="Describe what happened..."></textarea>
+      </label>
+
+      <label>
+        <input type="checkbox" name="terms" required> I confirm the report is true
+      </label>
+
+      <button type="submit">Submit Report</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
